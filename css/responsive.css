@@ -1,0 +1,198 @@
+/*********************************************************
+
+ Template Name:  MEHUL - Personal Portfolio Template
+ Author: MouriThemes
+ Version: 1.0
+ Design and Developed by: MouriThemes
+
+ NB: This is the custom JQuery file of this theme.
+
+ ***********************************************************/
+
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-nav li a {
+        padding: 15px 6px;
+    }
+
+    .portfolio-caption h4 {
+        margin-top: 80px;
+    }
+    .single-testimonial {
+        padding: 80px 20px;
+    }
+    .menu-wrap {
+        min-height: 60px;
+    }
+
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+
+    .navbar-toggle .icon-bar {
+        background: #f8f8f8;
+    }
+
+    .navbar-toggle {
+        margin-right: 0;
+        margin-top: -30px;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+    }
+
+    .menu-bg .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+    }
+
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 420px;
+    }
+
+    .navbar-toggle {
+        margin-top: -41px;
+    }
+
+    .single-contact {
+        margin-top: 20px;
+    }
+
+    .cd-headline span {
+        font-size: 12px;
+    }
+
+    .navbar-nav {
+        float: left;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+    .header-text h2 {
+        font-size: 32px;
+    }
+
+    .call-to-action a {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .signature {
+        height: 15px;
+    }
+
+    .signature img {
+        width: 50%;
+    }
+
+    .single-services {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .portfolio-menu button {
+        margin-bottom: 5px;
+    }
+
+    .portfolio .overlay {
+        padding: 10px 15px 0px 30px;
+    }
+
+    .menu-wrap {
+        min-height: 80px;
+    }
+
+    .section-header h2 {
+        font-size: 25px;
+    }
+
+    .about-area.section-padding {
+        padding: 75px 0px 60px;
+    }
+
+    .testimonial-content p {
+        padding: 0;
+        margin: 0 0 30px;
+    }
+
+    .single-post > h2 {
+        font-size: 13px;
+    }
+
+    .single-blog-news {
+        margin-bottom: 30px;
+    }
+
+    .statistic-area .item .fa {
+        font-size: 30px;
+    }
+
+    .statistic-area .item h2 {
+        font-size: 30px;
+    }
+
+    .statistic-area .item p {
+        font-size: 16px;
+    }
+
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .portfolio .overlay {
+        padding: 40px 15px 0 30px;
+    }
+
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 767px){
+
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px){
+
+}
+
+@media only screen and (min-width: 411px) and (max-width: 767px){
+
+
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 767px){
+    .header-text h2 {
+        font-size: 65px;
+    }
+
+    .call-to-action a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .statistic-area .item h2 {
+        font-size: 45px;
+    }
+
+    .statistic-area .item p {
+        font-size: 18px;
+    }
+
+}
+
+

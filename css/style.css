@@ -1,0 +1,968 @@
+/*********************************************************
+
+    Template Name:  MEHUL - Personal Portfolio Template
+    Author: MouriThemes
+    Version: 1.0
+    Design and Developed by: MouriThemes
+
+    NB: This is the main stylesheet of this theme.
+
+***********************************************************/
+
+/*=========================================================
+        Table of contents
+===========================================================
+
+1. BASE CSS
+2. PRELOADER CSS
+3. HEADER AREA CSS
+4. MENU AREA CSS
+5. ABOUT AREA CSS
+6. SERVICES AREA CSS
+7. PORTFOLIO AREA CSS
+8. TESTIMONIAL AREA CSS
+9. STATISTIC AREA CSS
+10. BLOG AREA CSS
+11. CONTACT AREA CSS
+12. FOOTER AREA CSS
+
+
+/*==========================================================
+        END OF TABLE OF CONTENT
+============================================================*/
+
+
+/*==========================================================
+    1. BASE CSS STARTS
+===========================================================*/
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #161616;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+html,
+body {
+    height: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+/*==========================================================
+    END BASE CSS ENDS
+===========================================================*/
+
+/*==========================================================
+    2. PRELOADER CSS STARTS
+===========================================================*/
+
+.loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader:before, .loader:after {
+    content: '';
+    border: 1em solid #F24259;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 0; }
+    50% {
+        opacity: 1; }
+    100% {
+        transform: scale(1);
+        opacity: 0; }
+}
+
+/*==========================================================
+    END PRELOADER CSS ENDS
+===========================================================*/
+
+/*==========================================================
+    3. HEADER AREA CSS STARTS
+===========================================================*/
+
+.header-area {
+    background: url(../images/home/home.jpeg); /*change image*/
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    background-position: center center;
+}
+
+.header-area:before {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+
+.banner-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.banner-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-text {
+    color: #ffffff;
+}
+
+.header-text h2 {
+    margin: 10px 0;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.header-text h1 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.header-text h3 {
+    margin: 10px 0px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+.call-to-action a {
+    color: #333333;
+    text-decoration: none;
+    background: #ffffff;
+    display: inline-block;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+
+.call-to-action a:hover{
+    color: #ffffff;
+    background: #F24259;
+    transition: .6s;
+}
+
+.call-to-action a.active{
+    color: #ffffff;
+    background: #F24259;
+}
+
+.cd-headline span {
+    font-size: 18px;
+}
+
+.cd-headline.clip.is-full-width {
+    margin: 0;
+}
+
+.cd-headline.clip.is-full-width span {
+    margin: 0;
+}
+
+.cd-headline.clip b {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    font-weight: 300;
+}
+
+canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.video-bg-area{
+    position: relative;
+    z-index: 1;
+}
+
+.video-bg-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+
+/*==========================================================
+    HEADER AREA CSS ENDS
+===========================================================*/
+
+/*==========================================================
+    4. MENU AREA CSS STARTS
+===========================================================*/
+
+.menu-wrap{
+    min-height: 150px;
+}
+
+.navigation-area {
+    background: #F24259;
+    position: relative;
+    padding: 5px 0px;
+    z-index: 999;
+}
+
+.is-sticky {
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+}
+
+.logo a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 10px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-nav {
+    float: right;
+    position: relative;
+}
+
+.navbar-nav li a {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.nav li a:focus,
+.nav li a:hover {
+    text-decoration: none;
+    background: none;
+}
+
+/*==========================================================
+    MENU AREA CSS ENDS
+===========================================================*/
+
+/*==========================================================
+    5. ABOUT AREA CSS STARTS
+===========================================================*/
+
+.about-area.section-padding {
+    padding: 100px 0 60px;
+}
+
+.about-left img {
+    width: 100%;
+}
+
+.section-title h2 {
+    font-size: 29px;
+    letter-spacing: 0;
+    color: #222222;
+    line-height: 30px;
+}
+
+.line1 {
+    height: 2px;
+    width: 150px;
+    background: #F24259;
+    margin-bottom: 30px;
+}
+
+.about-right p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    letter-spacing: 0;
+    margin-bottom: 19px;
+}
+
+.signature {
+    width: 200px;
+    height: 200px;
+}
+
+.signature img {
+    width: 80%;
+}
+
+/*==========================================================
+    ABOUT AREA CSS ENDS
+===========================================================*/
+
+
+/*==========================================================
+    6. SERVICES AREA CSS STARTS
+===========================================================*/
+
+.line {
+    width: 150px;
+    height: 2px;
+    background: #F24259;
+    margin: auto;
+    position: relative;
+}
+
+.line::before {
+    width: 15px;
+    height: 15px;
+    background: #F24259;
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -350%;
+    border-radius: 100%;
+}
+
+.line::after {
+    width: 15px;
+    height: 15px;
+    background: #F24259;
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: -350%;
+    border-radius: 100%;
+}
+
+.section-header h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section-header {
+    margin-bottom: 50px;
+}
+
+.services-area {
+    background: #f2f2f2;
+}
+
+.single-services i {
+    font-size: 50px;
+    text-align: center;
+    height: 80px;
+    padding-top: 10px;
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+
+.single-services:hover i {
+    color: #F24259;
+    padding: 0;
+}
+
+.single-services h2{
+    font-weight:bold;
+}
+
+/*==========================================================
+    SERVICES AREA CSS ENDS
+===========================================================*/
+
+
+/*==========================================================
+    7. PORTFOLIO AREA CSS STARTS
+===========================================================*/
+
+.portfolio-area img {
+    width: 100%;
+}
+
+.portfolio-menu {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.port-button{
+    text-align: center;
+}
+
+.portfolio-menu button {
+    background: #333333;
+    color: #ffffff;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 4px double;
+}
+
+.portfolio-menu button.active {
+    background: #F24259;
+}
+
+.portfolio-menu button:hover {
+    background: #F24259;
+}
+
+.portfolio img {
+    width: 100%;
+}
+
+.portfolio-area .col-md-4 {
+    padding: 5px;
+}
+
+.grid-item .portfolio{
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio img{
+    display: block;
+    width: 100%;
+    height: auto!important;
+}
+
+.portfolio:hover .portfolio img{
+    opacity:.6;
+}
+
+.portfolio .overlay {
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    position: absolute;
+    opacity: 0;
+    background: rgba(255,255,255,.9);
+    top: -60px;
+    height: 100%;
+    width: 100%;
+    color: #222222;
+    padding: 30px 15px 0 30px;
+    left: 0;
+}
+
+.portfolio:hover .overlay{
+    opacity:1;
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    top: 0;
+}
+
+.portfolio .overlay .figure-caption h4+p{
+    color: #ffffff;
+}
+
+.portfolio .overlay a {
+    line-height: 35px;
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    margin: 10px auto 0;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    text-align: center;
+    background: #F24259;
+    border: 2px solid transparent;
+}
+
+.portfolio .overlay a:hover{
+    border: 2px solid #5E42A6;
+}
+
+.overlay a.top{
+    -webkit-transition: transform.9s ease 0s;
+    -o-transition: transform .9s ease 0s;
+    transition: transform .90s ease 0s;
+}
+
+.overlay a.btm{
+    -webkit-transition: transform.9s ease 0s;
+    -o-transition: transform .9s ease 0s;
+    transition: transform .90s ease 0s;
+}
+
+.overlay a:hover{
+    background: #fff;
+    color: #333333;
+}
+
+.portfolio img, .portfolio .overlay:before, .portfolio .overlay:after, .portfolio a {
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+}
+
+/*==========================================================
+    PORTFOLIO AREA CSS ENDS
+===========================================================*/
+
+/*==========================================================
+    8. TESTIMONIAL AREA CSS STARTS
+===========================================================*/
+
+.single-testimonial .pic {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonial-title h3 {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.testimonial-title h3 span {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #333333;
+}
+
+.testimonial-title h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.testimonial-content p {
+    padding: 0 10%;
+}
+
+.single-testimonial .pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.single-testimonial .testimonial-title small{
+    font-size: 15px;
+    color:#292F36;
+}
+
+.testimonial-area {
+    color: #333333;
+    background: #F2F2F2;
+}
+
+.owl-dots{
+    text-align: center;
+}
+
+.owl-dot {
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #333333 !important;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.owl-dot.active {
+    background-color: #F24259 !important;
+}
+
+/*==========================================================
+    TESTIMONIAL AREA CSS ENDS
+===========================================================*/
+
+/*==========================================================
+    9. STATISTIC AREA CSS ENDS
+===========================================================*/
+
+.statistic-area{
+    background-image: url(../images/statistic/stats.jpeg); /*edit image here*/
+    position: relative;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    color:#ffffff;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.statistic-area:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+
+.statistic-area .item{
+    margin-bottom: 30px;
+}
+
+.statistic-area .item .fa{
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.statistic-area .item p{
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.statistic-area .item h2 {
+    color: #F24259;
+    font-weight: 800;
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+/*==========================================================
+    STATISTIC AREA CSS ENDS
+===========================================================*/
+
+/*==========================================================
+    10. BLOG AREA CSS STARTSS
+===========================================================*/
+
+.news-img {
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.single-blog-news {
+    box-shadow: rgba(58,78,95,0.2) 0 10px 16px, rgba(58,78,95,0.05) 0 -5px 16px;
+}
+
+.single-blog-news:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.news-img img {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    width: 100%;
+}
+
+.blog-news-area .header-text > h2 {
+    left: 33%;
+}
+
+.news-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.single-post > h2 {
+    color: #333333;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+.single-post > h5 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #555555;
+}
+
+.single-post h5 span {
+    color: #3498DB;
+    font-size: 35px;
+    margin: 5px;
+    padding: 0;
+}
+
+.single-post > p {
+    font-size: 14px;
+    text-align: left;
+}
+
+.single-post > a {
+    display: inline-block;
+    font-size: 14px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.single-post > a:hover {
+    border-radius: 25px;
+    display: inline-block;
+    text-decoration: none;
+    color: #333333;
+}
+
+.single-post {
+    border-left: 1px solid #DADADA;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    border-top: 1px solid transparent;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.post-date span {
+    color: #333333;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.single-blog-news {
+    box-shadow: rgba(58,78,95,0.2) 0 10px 16px, rgba(58,78,95,0.05) 0 -5px 16px;
+}
+
+.view-all {
+    text-align: right;
+}
+
+.view-all a {
+    background: #fff;
+    text-decoration: none;
+    color: #333333;
+    border-radius: 0;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: 600;
+    margin-right: 70px;
+    border: 1px solid #333333;
+}
+
+/*==========================================================
+    BLOG AREA CSS ENDS
+===========================================================*/
+
+/*==========================================================
+    11. CONTACT AREA CSS STARTS
+===========================================================*/
+
+.contact-area {
+    background: #f2f2f2;
+}
+
+#contact-form {
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    padding: 5%;
+}
+
+.single-contact i {
+    font-size: 30px;
+    color: #F24259;
+}
+
+.single-contact .socials i {
+    font-size: 14px;
+    color: #333333;
+}
+
+.socials i:hover {
+    cursor: pointer;
+}
+
+.single-contact {
+    margin-bottom: 50px;
+}
+
+.contact-area .form-control{
+    border: none;
+    border-bottom: 2px solid #a2a2a2;
+    box-shadow: none;
+    padding: 6px 0;
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+
+.contact-area textarea.form-control{
+    border:2px solid #a2a2a2;
+    padding: 6px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.single-contact h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.btn.btn-send {
+    background: #F24259;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contact-right h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.socials {
+    padding-top: 5%;
+}
+
+.socials i {
+    margin: 0 10px;
+}
+
+.single-contact {
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    padding: 5%;
+}
+
+/*==========================================================
+    CONTACT AREA CSS ENDS
+===========================================================*/
+
+/*==========================================================
+    12. FOOTER AREA CSS ENDS
+===========================================================*/
+
+.footer-area {
+    background: #232323;
+    color: #ffffff;
+    padding: 30px 0;
+}
+.footer-area a{
+    color:#F24259;
+}
+
+/*==========================================================
+    FOOTER AREA CSS ENDS
+===========================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
